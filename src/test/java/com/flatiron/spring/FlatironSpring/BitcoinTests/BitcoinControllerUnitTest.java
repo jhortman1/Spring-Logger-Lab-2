@@ -12,10 +12,11 @@ public class BitcoinControllerUnitTest {
     @Test
     void returnPriceStatement(){
         BitcoinService bitcoinService = Mockito.mock(BitcoinService.class);
-        String bitcoinPriceStatement = "Hello the current price of Bitcoin is: $4";
+        String price = "4.00";
+        String bitcoinPriceStatement = "Hello the current price of Bitcoin is: "+ price;
         BitCoinController bitCoinController = new BitCoinController(bitcoinService);
-        when(bitcoinService.getBitcoinPrice()).thenReturn("$4");
-        String actual = bitCoinController.price("$4");
+        when(bitcoinService.getBitcoinPrice()).thenReturn(price);
+        String actual = bitCoinController.price();
         assertEquals(bitcoinPriceStatement,actual);
     }
 }

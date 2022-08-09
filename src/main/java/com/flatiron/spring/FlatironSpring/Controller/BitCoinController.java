@@ -14,7 +14,7 @@ public class BitCoinController {
         this.bitcoinService = bitcoinService;
     }
     @GetMapping("/price")
-    public @ResponseBody String price(String price)
+    public @ResponseBody String price()
     {
         return "Hello the current price of Bitcoin is: " + bitcoinService.getBitcoinPrice();
 
