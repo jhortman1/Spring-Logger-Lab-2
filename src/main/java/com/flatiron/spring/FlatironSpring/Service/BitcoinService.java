@@ -2,6 +2,8 @@ package com.flatiron.spring.FlatironSpring.Service;
 
 import lombok.*;
 import org.modelmapper.ModelMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -10,10 +12,13 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 public class BitcoinService {
-    public String getBitcoinPrice(){
+    private Logger logger = LoggerFactory.getLogger(BitcoinService.class);
+        public String getBitcoinPrice(){
+        logger.trace("In BitcoinService getBitCoinPrice() - begin...");
         String apiURL = "https://api.coincap.io/v2/assets/bitcoin";
         RestTemplate restTemplate = new RestTemplate();
         Data result = restTemplate.getForObject(apiURL, Data.class);
+        logger.trace("Leaving BitcoinService getBitCoinPrice() - end.");
         return result.getData().getVwap24Hr();
     }
 

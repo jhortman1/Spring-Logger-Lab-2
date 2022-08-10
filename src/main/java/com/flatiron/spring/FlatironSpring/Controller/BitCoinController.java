@@ -1,6 +1,8 @@
 package com.flatiron.spring.FlatironSpring.Controller;
 
 import com.flatiron.spring.FlatironSpring.Service.BitcoinService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -9,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class BitCoinController {
     private BitcoinService bitcoinService;
+    private Logger logger = LoggerFactory.getLogger(BitCoinController.class);
     public BitCoinController(BitcoinService bitcoinService)
     {
         this.bitcoinService = bitcoinService;
@@ -16,7 +19,9 @@ public class BitCoinController {
     @GetMapping("/price")
     public @ResponseBody String price()
     {
-        return "Hello the current price of Bitcoin is: " + bitcoinService.getBitcoinPrice();
+        String price = bitcoinService.getBitcoinPrice();
+        logger.info("Getting result from api - " + price);
+        return "Hello the current price of Bitcoin is: " + price;
 
     }
 }
