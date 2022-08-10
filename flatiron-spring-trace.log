@@ -1,0 +1,28 @@
+INF [THREAD:main] com.flatiron.spring.FlatironSpring.FlatironSpringApplication 
+ 		 Starting FlatironSpringApplication using Java 18.0.1.1 on DESKTOP-U03LT8A with PID 4796 (C:\Users\James Hortman\Documents\Flatiron\Week8\Day1\Spring_Testing_Lab_2-main\target\classes started by James Hortman in C:\Users\James Hortman\Documents\Flatiron\Week8\Day1\Spring_Testing_Lab_2-main) 
+INF [THREAD:main] com.flatiron.spring.FlatironSpring.FlatironSpringApplication 
+ 		 Starting FlatironSpringApplication using Java 18.0.1.1 on DESKTOP-U03LT8A with PID 4796 (C:\Users\James Hortman\Documents\Flatiron\Week8\Day1\Spring_Testing_Lab_2-main\target\classes started by James Hortman in C:\Users\James Hortman\Documents\Flatiron\Week8\Day1\Spring_Testing_Lab_2-main) 
+DEB [THREAD:main] com.flatiron.spring.FlatironSpring.FlatironSpringApplication 
+ 		 Running with Spring Boot v2.7.2, Spring v5.3.22 
+DEB [THREAD:main] com.flatiron.spring.FlatironSpring.FlatironSpringApplication 
+ 		 Running with Spring Boot v2.7.2, Spring v5.3.22 
+INF [THREAD:main] com.flatiron.spring.FlatironSpring.FlatironSpringApplication 
+ 		 No active profile set, falling back to 1 default profile: "default" 
+INF [THREAD:main] com.flatiron.spring.FlatironSpring.FlatironSpringApplication 
+ 		 No active profile set, falling back to 1 default profile: "default" 
+INF [THREAD:main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer 
+ 		 Tomcat initialized with port(s): 8080 (http) 
+INF [THREAD:main] org.apache.catalina.core.StandardService 
+ 		 Starting service [Tomcat] 
+INF [THREAD:main] org.apache.catalina.core.StandardEngine 
+ 		 Starting Servlet engine: [Apache Tomcat/9.0.65] 
+INF [THREAD:main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] 
+ 		 Initializing Spring embedded WebApplicationContext 
+INF [THREAD:main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext 
+ 		 Root WebApplicationContext: initialization completed in 913 ms 
+INF [THREAD:main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer 
+ 		 Tomcat started on port(s): 8080 (http) with context path '' 
+INF [THREAD:main] com.flatiron.spring.FlatironSpring.FlatironSpringApplication 
+ 		 Started FlatironSpringApplication in 1.57 seconds (JVM running for 2.004) 
+INF [THREAD:main] com.flatiron.spring.FlatironSpring.FlatironSpringApplication 
+ 		 Started FlatironSpringApplication in 1.57 seconds (JVM running for 2.004) 
